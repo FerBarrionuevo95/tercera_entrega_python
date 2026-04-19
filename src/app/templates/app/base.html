@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi Web</title>
+    <title>Mi Blog</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .post {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mi primera página Django 🚀</h1>
 
+<header>
+    <h1>Mi Blog Django ✨</h1>
+</header>
+
+<nav>
+    <a href="/">Inicio</a>
+    <a href="/crear/">Crear Post</a>
+    <a href="/buscar/">Buscar</a>
+</nav>
+
+<div class="container">
     {% block content %}
     {% endblock %}
+</div>
+
 </body>
 </html>
